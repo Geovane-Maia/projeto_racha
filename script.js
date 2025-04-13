@@ -2,6 +2,7 @@ const jogadores = [
     "Lucas", "Pedro", "João", "Mateus", "Gabriel",
     "Marcos", "Ricardo", "Rafael", "Thiago", "Diego"
 ];
+
 let time1 = [];
 let time2 = null;
 let jogadorSorteado = null;
@@ -13,16 +14,5 @@ for (let i = 0; i < jogadores.length; i++) {
         }
         }
     
-        console.log(time1);
-    
-    
+        console.log(time1);   
 }
-
-
-
-
-
-//document.getElementById('sortear').addEventListener('click', () => {
-  //  console.log(jogadores);
-    
-//})
