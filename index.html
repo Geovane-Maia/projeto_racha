@@ -13,19 +13,32 @@
     <!-- CRIANDO A INTERFACE DO PROJETO-->
 
     <div class="container">  
+        <div class="row col-12 " id="fundo">
+        <div class="row col-5" id="formularioJogador">
         <h1>Sorteio de Racha</h1>  
-        <form>  
+    
             <div class="input-group">  
                 <label for="qtdjogadores">Quantidade de jogadores</label>  
-                <input type="text" id="qtdjogadores" name="qtdjogadores" required>  
+                <input type="text" id="qtdjogadores" name="qtdjogadores">  
             </div>  
             <div class="input-group">  
-                <label for="nomes_jogadores">Nomes dos jogadores</label>  
-                <input type="text" id="nomes_jogadores" name="nomes_jogadores" required>  
+                <label>Nomes dos jogadores</label>  
+                <input type="text" id="nomes" name="nomes_jogadores1">  
             </div>  
-            <button type="submit">Sortear</button>  
-        </form>  
+            <button type="submit" class="btn btn-primary" onclick="inserirJogador()">Adicionar</button> 
+              
+
+        
+    
+    </div>
+    <div class="row col-5" id="listaJogadores">
+        <h1>Jogadores listados</h1>
+        <span id="listados"></span>
+    </div>
+    <button type="submit" class="btn btn-success" id="verde">Sortear</button>
+</div>
     </div> 
+
 
 
 

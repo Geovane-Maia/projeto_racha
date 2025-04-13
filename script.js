@@ -1,4 +1,4 @@
-const jogadores = [
+/*const jogadores = [
     "Lucas", "Pedro", "João", "Mateus", "Gabriel",
     "Marcos", "Ricardo", "Rafael", "Thiago", "Diego"
 ];
@@ -15,4 +15,23 @@ for (let i = 0; i < jogadores.length; i++) {
         }
     
         console.log(time1);   
+}*/
+let jogadorListado = ''
+let qtdJogadores = ''
+let qtdLista = []
+
+function inserirJogador() {
+    qtdJogadores = document.getElementById('qtdjogadores').value;
+    contador+=1
+    if(qtdLista.length < qtdjogadores ) {
+jogadorListado = document.getElementById('nomes').value;
+    document.getElementById('listados').innerHTML += contador + '.' + ' ' + jogadorListado + '<br>'
+    qtdLista.push(jogadorListado)
+    } else {
+        alert('erro')
+        return
+    }
+   
 }
+
+    
