@@ -26,16 +26,24 @@
                 <input type="text" id="nomes" name="nomes_jogadores1">  
             </div>  
             <button type="submit" class="btn btn-primary" onclick="inserirJogador()">Adicionar</button> 
-              
 
-        
-    
     </div>
     <div class="row col-5" id="listaJogadores">
         <h1>Jogadores listados</h1>
         <span id="listados"></span>
     </div>
     <button type="submit" class="btn btn-success" id="verde">Sortear</button>
+    <div class="row col-4 mt-3" id="resultado">
+        <h1>Ações</h1>
+        <!-- criando botão limpar e copiar resultado -->
+         <button type="submit" class="btn btn-primary" id="copiar">Copiar</button>
+         <button type="submit" class="btn btn-danger" id="limpar">Limpar</button>
+        </div>
+        <div class="row col-8 mt-3" id="resultadoTela">
+            <h1>Resultado</h1>
+            <span id="resultadoSorteio"></span>
+        </div>
+        
 </div>
     </div> 
 
