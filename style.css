@@ -111,6 +111,13 @@ span {
   border-radius: 10px;
   width: 550px;
 }
+#icone {
+  position: absolute;
+  top: 1%;
+  color: #000000;
+  font-size: 50px;
+  margin-left: 15px;
+}
 /* responsivo */
 @media (max-width: 768px) {
   .container {
