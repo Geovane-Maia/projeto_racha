@@ -26,9 +26,10 @@
             </div>  
             <div class="input-group">  
                 <label>Nomes dos jogadores</label>  
-                <input type="text" id="nomes" name="nomes_jogadores1">  
+                <input type="text" id="nomes" name="nomes_jogadores1" disabled>  
             </div>  
-            <button type="submit" class="btn btn-primary" onclick="inserirJogador()">Adicionar</button> 
+            <button type="submit" class="btn btn-primary" id="botao" onclick="inserirJogador()">Adicionar</button> 
+            <button type="submit" class="btn btn-warning" onclick="criarListaJogadores()">Criar Lista De Jogadores</button>
 
     </div>
     <div class="row col-5" id="listaJogadores">

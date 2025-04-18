@@ -1,37 +1,24 @@
-/*const jogadores = [
-    "Lucas", "Pedro", "João", "Mateus", "Gabriel",
-    "Marcos", "Ricardo", "Rafael", "Thiago", "Diego"
-];
+let quantidadeJogadores = 4
+let botao = document.getElementById('botao')
+let input = document.getElementById("nomes");
+let nomeJogador = ''
+let jogadores = ''
 
-let time1 = [];
-let time2 = null;
-let jogadorSorteado = null;
-for (let i = 0; i < jogadores.length; i++) {
-    while(time1.length < 5 ) {
-        jogadorSorteado = Math.floor(Math.random() * jogadores.length);
-        if(!time1.includes(jogadores[jogadorSorteado]) && time1.length < 5) {
-            time1.push(jogadores[jogadorSorteado])
-        }
-        }
-    
-        console.log(time1);   
-}*/
-let jogadorListado = ''
-let qtdJogadores = ''
-let qtdLista = []
-let contador = 0;
+let lista = document.getElementById("listados");
+let contador = 0
+
 function inserirJogador() {
-    qtdJogadores = document.getElementById('qtdjogadores').value;
-    contador += 1
-    if (qtdLista.length < qtdjogadores) {
-        jogadorListado = document.getElementById('nomes').value;
-        document.getElementById('listados').innerHTML += contador + '.' + ' ' + jogadorListado + '<br>'
-        qtdLista.push(jogadorListado)
-    } else {
-        alert('erro')
-        return
-    }
-
+    quantidadeJogadores = document.getElementById("qtdjogadores").value;
+    quantidadeJogadores <= 0 ? input.disabled = true : input.disabled = false;
+    quantidadeJogadores == '' ? botao.disabled = false : botao.disabled = true;     
+    
 }
 
-
+function criarListaJogadores() {
+    nomeJogador = document.getElementById("nomes").value;
+    if(contador < quantidadeJogadores) {
+      jogadores = nomeJogador
+      contador++
+      document.getElementById("listados").innerHTML += contador + '.' + ' ' + jogadores + '<br>'     
+    }
+        }
